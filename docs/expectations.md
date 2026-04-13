@@ -1,19 +1,15 @@
 # What Part-IS expects in practice
 
-This is the practical reading for software teams.
+This page focuses on the practical implications for software teams.
 
-## 1. Scope is not just your app
+Source reference:
+- [Easy Access Rules for Information Security (EASA, Dec 2025)](https://www.easa.europa.eu/en/downloads/137507/en)
 
-Part-IS starts with identifying:
+## 1. Scope is wider than the app
 
-- activities
-- facilities
-- resources
-- services you provide, receive, operate, or maintain
-- equipment, systems, data, and information that support them
-- interfaces with other organisations
+Part-IS starts with identifying activities, resources, services, systems, data, and interfaces.
 
-For a software company, that usually means your scope is wider than the product codebase. It can include:
+For a software company, that usually means the scope is wider than the codebase. It can include:
 
 - cloud platforms and managed services
 - support tooling and admin backends
@@ -22,118 +18,118 @@ For a software company, that usually means your scope is wider than the product 
 - customer data flows and integrations
 - contractors or suppliers with meaningful access
 
-If you cannot explain the system boundary and the important interfaces, your Part-IS story is weak.
+If you cannot explain the system boundary and the important interfaces, the security story is weak.
+
+Reference: Part-IS.I.OR.200 and Part-IS.I.OR.205.
 
 ## 2. Safety impact is the lens
 
 Part-IS is not generic corporate cyber.
 
-The core question is: **could this information security issue affect aviation safety, directly or through a chain of dependencies?**
+The key question is whether an information security issue could affect aviation safety, directly or through a chain of dependencies.
 
-For software builders, that means you should be able to explain:
+For software builders, that means being able to explain:
 
-- what operational outcome your system influences
+- what operational outcome the system influences
 - what happens if data is wrong, delayed, unavailable, or exposed
-- which downstream organisations depend on you
-- where a compromise could create an unsafe condition or materially support one
+- which downstream organisations depend on the system
+- where compromise could create an unsafe condition or materially support one
 
-You do not need to cosplay as an airline or MRO. But you do need to understand how your system could contribute to someone else’s safety problem.
+Reference: Article 3 definitions and Part-IS.I.OR.205.
 
-## 3. Risk assessment must cover assets, interfaces, and shared risk
+## 3. Risk assessment has to cover assets, interfaces, and shared risk
 
-A decent Part-IS-style risk assessment should link each risk to:
+A useful risk assessment should link each risk to:
 
 - the relevant asset or service
 - the relevant interface or supplier relationship
 - a threat scenario
-- a risk level based on defined criteria
+- a defined risk level
 - an owner
-- a decision: acceptable, treated, or avoided
+- a decision: accepted, treated, or avoided
 
-Two things stand out in the EASA text:
+The method should be documented and repeatable. Interfacing organisations should share enough information to manage mutual exposure.
 
-- the method should be **documented, repeatable, and comparable over time**
-- interfacing organisations should share enough information to manage **mutual exposure**
+That means the risk register should describe real systems, real dependencies, and real decisions.
 
-In plain English: your risk register should not be a vague list of generic cyber fears. It should describe real systems, real dependencies, and real decisions.
+Reference: Part-IS.I.OR.205.
 
-## 4. Risk treatment needs a plan, owners, and timelines
+## 4. Risk treatment needs owners and timelines
 
-Part-IS is explicit that unacceptable risks need measures that are implemented in time and checked for continued effectiveness.
+Unacceptable risks need measures that are implemented in time and checked later for effectiveness.
 
-So your treatment plan should show:
+Treatment plans should show:
 
-- what measure is being implemented
+- which measure is being implemented
 - which risk it addresses
 - who owns it
 - when it will be done
 - whether compensating controls exist if it is delayed
-- how you will know it is still effective later
+- how effectiveness will be checked later
 
-That is more disciplined than “we intend to harden this soon”.
+Reference: Part-IS.I.OR.210.
 
 ## 5. Detection includes vulnerabilities, not just attacks
 
-A first skim can make this sound like an incident-response requirement. It is broader than that.
+Part-IS does not limit detection to active incidents.
 
-Part-IS treats both of these as detection inputs:
+It also expects organisations to take discovered vulnerabilities seriously.
 
-- events and anomalies
-- discovered vulnerabilities
-
-So in practice you want a mechanism to collect and evaluate:
+In practice that means collecting and evaluating:
 
 - auth and privilege anomalies
 - operational deviations from expected baselines
 - security alerts
 - supplier notifications
 - researcher reports
-- OSS and dependency disclosures
+- open-source and dependency disclosures
 - internal staff reports
 
-If you only think in terms of malware alerts, you are missing a chunk of what the regulation is getting at.
+Reference: Part-IS.I.OR.215 and Part-IS.I.OR.220.
 
-## 6. Internal reporting should be easy and connected to action
+## 6. Internal reporting needs to lead to action
 
-The internal reporting scheme is not paperwork theatre. It is supposed to let the organisation:
+The internal reporting scheme is supposed to help the organisation:
 
 - collect events and vulnerabilities
-- evaluate which ones are incidents or safety-relevant vulnerabilities
+- decide which ones are incidents or safety-relevant vulnerabilities
 - identify causes and contributing factors
-- distribute the information internally to the people who need to act
+- distribute the information to the people who need to act
 
-For a software team, that means your reporting path should not stop at a ticket queue nobody reads. It should feed risk review, incident response, engineering work, and where needed customer or authority reporting.
+For a software team, that means the reporting path cannot end in a dead ticket queue. It should feed risk review, incident response, engineering work, and when needed customer or authority reporting.
+
+Reference: Part-IS.I.OR.215.
 
 ## 7. External reporting timelines are real
 
 Where a significant aviation safety risk exists, Part-IS expects:
 
 - notification as soon as known
-- a report within **72 hours** unless exceptional circumstances prevent it
+- a report within 72 hours unless exceptional circumstances prevent it
 - a follow-up report on recovery and prevention actions
 
-You may not be the directly regulated reporter, but your customer may depend on your speed and evidence to meet that obligation.
+You may not be the directly regulated reporter, but a customer may depend on your speed and evidence to meet that obligation.
 
-That means contracts, escalation paths, and incident handling should be designed with this clock in mind.
+Reference: Part-IS.I.OR.230.
 
-## 8. Supplier oversight is stronger than normal vendor management
+## 8. Supplier oversight is stronger than standard vendor management
 
-If information security management activities are contracted out, the regulated organisation keeps responsibility and must oversee the contracted party.
+If information security management activities are contracted out, responsibility stays with the regulated organisation.
 
-The useful software-builder takeaway is simple:
+For software builders, that means:
 
-- do not present critical security work as a black box
+- do not treat critical security work as a black box
 - be able to explain who does what
 - define reporting obligations and contacts
 - support audit and evidence requests
-- manage remote/admin access tightly
-- treat supply-chain and managed-service risk as part of the product risk picture
+- manage remote and administrative access tightly
+- treat supply-chain and managed-service risk as part of product risk
 
-Aviation customers may expect more structure here than a standard SaaS security page provides.
+Reference: Part-IS.I.OR.235.
 
 ## 9. Roles, competence, and trustworthiness matter
 
-Part-IS is unusually explicit about:
+Part-IS is explicit about:
 
 - accountable management ownership
 - named persons for compliance and monitoring
@@ -142,15 +138,15 @@ Part-IS is unusually explicit about:
 - personnel acknowledging responsibilities
 - identity and trustworthiness for people with access to sensitive systems and data
 
-For a lean software company, this does **not** mean building a giant org chart.
+For a lean software company, this does not mean building a giant org chart. It does mean being able to show that responsibilities are clear, people are competent for the work, and highly privileged access is not handed out casually.
 
-It does mean you should be able to show that key responsibilities are clear, people are competent for the work, and highly privileged access is not handed out casually.
+Reference: Part-IS.I.OR.240.
 
 ## 10. Documentation is part of the control system
 
 The regulation expects an information security management manual plus supporting procedures.
 
-You do not have to call it an ISMM internally, but you should have one coherent place that explains:
+You do not need to call it an ISMM internally, but there should be one coherent place that explains:
 
 - policy
 - scope
@@ -161,29 +157,29 @@ You do not have to call it an ISMM internally, but you should have one coherent 
 - change handling approach
 - alternative or compensating arrangements where relevant
 
-If your security operating model only exists in scattered chats and tribal knowledge, it will not travel well in aviation.
+If the operating model only exists in scattered chats and tribal knowledge, it will not stand up well in aviation.
+
+Reference: Part-IS.I.OR.250.
 
 ## 11. Change management is not optional
 
 Security-relevant changes to scope, interfaces, policy, risk method, reporting process, outsourced activities, and recovery arrangements are a big deal in Part-IS.
 
-Practical translation:
-
 Review security impact before major changes to:
 
 - authentication or authorisation
 - tenant model or data segregation
-- infra topology
+- infrastructure topology
 - logging and monitoring coverage
 - key integrations
 - supplier arrangements
 - incident reporting or escalation process
 
-The point is not bureaucracy. The point is to avoid quietly breaking the assumptions your risk picture depends on.
+Reference: Part-IS.I.OR.255.
 
-## 12. Continuous improvement means more than yearly review
+## 12. Continuous improvement has to be visible
 
-Part-IS explicitly calls for effectiveness and maturity assessment using indicators, on a planned basis and after incidents.
+Part-IS calls for effectiveness and maturity assessment using indicators, on a planned basis and after incidents.
 
 That pushes teams toward questions like:
 
@@ -191,12 +187,12 @@ That pushes teams toward questions like:
 - are incidents being detected in time?
 - do reviews find the same weaknesses repeatedly?
 - are suppliers improving or drifting?
-- is the organisation more capable than six months ago, or just busier?
+- is the organisation more capable than six months ago?
 
-This is one of the clearer signals that Part-IS is a living management system, not a document set.
+Reference: Part-IS.I.OR.260.
 
 ## Bottom line
 
-For aviation software builders, the practical standard is:
+For aviation software builders, the practical standard is simple:
 
-**run security as an accountable, documented, evidence-producing operating system tied to safety-relevant risk — not as an informal collection of best efforts.**
+Run security as an accountable, documented, evidence-producing operating system tied to safety-relevant risk.

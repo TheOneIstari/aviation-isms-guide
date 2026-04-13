@@ -1,12 +1,12 @@
 # Practical checklist
 
-Use this as a pragmatic baseline for an aviation-facing software product.
+Use this as a working baseline for an aviation-facing software product.
 
 ## Must have early
 
 - [ ] Written information security policy with clear management backing
 - [ ] Defined scope covering key services, assets, data flows, and external interfaces
-- [ ] Named accountable owner for security plus named incident/compliance leads
+- [ ] Named accountable owner for security plus named incident and compliance leads
 - [ ] Risk register that links risks to assets, interfaces, owners, treatment, and status
 - [ ] Risk treatment plan with priorities, timelines, and compensating controls for delays
 - [ ] MFA for admins and other privileged roles
@@ -27,7 +27,7 @@ Use this as a pragmatic baseline for an aviation-facing software product.
 - [ ] Logging and security-data retention rules
 - [ ] Customer and regulator escalation path aligned to possible 72-hour reporting needs
 - [ ] Security training and competence evidence for relevant staff
-- [ ] Trustworthiness / screening approach for highly privileged roles where justified
+- [ ] Trustworthiness or screening approach for highly privileged roles where justified
 - [ ] Supplier review template and audit/evidence request process
 - [ ] Security KPIs or effectiveness indicators
 - [ ] Scheduled review cadence for risks, incidents, supplier issues, and control effectiveness
@@ -35,9 +35,9 @@ Use this as a pragmatic baseline for an aviation-facing software product.
 
 ## Usually later, but plan for it
 
-- [ ] Enterprise SSO / federation where customer context makes it relevant
+- [ ] Enterprise SSO or federation where customer context makes it relevant
 - [ ] More formal ISMS program and stronger internal assurance
-- [ ] More mature detection capability across logs, alerts, vulnerabilities, and supplier intel
+- [ ] More mature detection capability across logs, alerts, vulnerabilities, and supplier intelligence
 - [ ] Stronger contractual security clauses and right-to-audit language
 - [ ] Maturity assessments that go beyond pass/fail compliance
 - [ ] External assurance path if customers push for it
