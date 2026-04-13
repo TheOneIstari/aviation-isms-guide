@@ -2,9 +2,6 @@
 
 This page focuses on the practical implications for software teams.
 
-Source reference:
-- [Easy Access Rules for Information Security (EASA, Dec 2025)](https://www.easa.europa.eu/en/downloads/137507/en)
-
 ## 1. Scope is wider than the app
 
 Part-IS starts with identifying activities, resources, services, systems, data, and interfaces.

@@ -55,11 +55,6 @@ If your product touches operational workflows, aircraft data, maintenance planni
 - [Practical checklist](./checklist)
 - [Architecture & controls](./controls)
 
-## Read the source
-
-Official EASA document:
-- [Easy Access Rules for Information Security (Dec 2025 PDF)](https://www.easa.europa.eu/en/downloads/137507/en)
-
 ## Bottom line
 
 If you build for aviation, assume you may need to operate like a security-managed supplier even when you are not the directly regulated entity.
