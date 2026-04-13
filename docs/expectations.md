@@ -17,7 +17,7 @@ For a software company, that usually means the scope is wider than the codebase.
 
 If you cannot explain the system boundary and the important interfaces, the security story is weak.
 
-Reference: Part-IS.I.OR.200 and Part-IS.I.OR.205.
+See Part-IS.I.OR.200 and .205.
 
 ## 2. Safety impact is the lens
 
@@ -32,7 +32,7 @@ For software builders, that means being able to explain:
 - which downstream organisations depend on the system
 - where compromise could create an unsafe condition or materially support one
 
-Reference: Article 3 definitions and Part-IS.I.OR.205.
+See Article 3 and Part-IS.I.OR.205.
 
 ## 3. Risk assessment has to cover assets, interfaces, and shared risk
 
@@ -49,7 +49,7 @@ The method should be documented and repeatable. Interfacing organisations should
 
 That means the risk register should describe real systems, real dependencies, and real decisions.
 
-Reference: Part-IS.I.OR.205.
+See Part-IS.I.OR.205.
 
 ## 4. Risk treatment needs owners and timelines
 
@@ -64,7 +64,7 @@ Treatment plans should show:
 - whether compensating controls exist if it is delayed
 - how effectiveness will be checked later
 
-Reference: Part-IS.I.OR.210.
+See Part-IS.I.OR.210.
 
 ## 5. Detection includes vulnerabilities, not just attacks
 
@@ -82,7 +82,7 @@ In practice that means collecting and evaluating:
 - open-source and dependency disclosures
 - internal staff reports
 
-Reference: Part-IS.I.OR.215 and Part-IS.I.OR.220.
+See Part-IS.I.OR.215 and .220.
 
 ## 6. Internal reporting needs to lead to action
 
@@ -95,7 +95,7 @@ The internal reporting scheme is supposed to help the organisation:
 
 For a software team, that means the reporting path cannot end in a dead ticket queue. It should feed risk review, incident response, engineering work, and when needed customer or authority reporting.
 
-Reference: Part-IS.I.OR.215.
+See Part-IS.I.OR.215.
 
 ## 7. External reporting timelines are real
 
@@ -107,7 +107,7 @@ Where a significant aviation safety risk exists, Part-IS expects:
 
 You may not be the directly regulated reporter, but a customer may depend on your speed and evidence to meet that obligation.
 
-Reference: Part-IS.I.OR.230.
+See Part-IS.I.OR.230.
 
 ## 8. Supplier oversight is stronger than standard vendor management
 
@@ -122,7 +122,7 @@ For software builders, that means:
 - manage remote and administrative access tightly
 - treat supply-chain and managed-service risk as part of product risk
 
-Reference: Part-IS.I.OR.235.
+See Part-IS.I.OR.235.
 
 ## 9. Roles, competence, and trustworthiness matter
 
@@ -137,7 +137,7 @@ Part-IS is explicit about:
 
 For a lean software company, this does not mean building a giant org chart. It does mean being able to show that responsibilities are clear, people are competent for the work, and highly privileged access is not handed out casually.
 
-Reference: Part-IS.I.OR.240.
+See Part-IS.I.OR.240.
 
 ## 10. Documentation is part of the control system
 
@@ -156,7 +156,7 @@ You do not need to call it an ISMM internally, but there should be one coherent 
 
 If the operating model only exists in scattered chats and tribal knowledge, it will not stand up well in aviation.
 
-Reference: Part-IS.I.OR.250.
+See Part-IS.I.OR.250.
 
 ## 11. Change management is not optional
 
@@ -172,7 +172,7 @@ Review security impact before major changes to:
 - supplier arrangements
 - incident reporting or escalation process
 
-Reference: Part-IS.I.OR.255.
+See Part-IS.I.OR.255.
 
 ## 12. Continuous improvement has to be visible
 
@@ -186,7 +186,7 @@ That pushes teams toward questions like:
 - are suppliers improving or drifting?
 - is the organisation more capable than six months ago?
 
-Reference: Part-IS.I.OR.260.
+See Part-IS.I.OR.260.
 
 ## Bottom line
 

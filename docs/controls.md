@@ -18,7 +18,7 @@ A lightweight but real operating model should cover:
 - change management
 - periodic review and improvement
 
-Reference: Part-IS.I.OR.200, .245, .250, .255, .260.
+See Part-IS.I.OR.200, .245, .250, .255 and .260.
 
 ## Scope, assets, and interfaces
 
@@ -36,7 +36,7 @@ Include the systems and dependencies that matter to operation and trust, for exa
 
 Map interfaces where data or administrative influence crosses organisational boundaries.
 
-Reference: Part-IS.I.OR.200 and .205.
+See Part-IS.I.OR.200 and .205.
 
 ## Risk model
 
@@ -52,7 +52,7 @@ The risk model should describe:
 
 If ISO, NIST, or another framework is used internally, fine. The result still has to make sense in an aviation-safety context.
 
-Reference: Part-IS.I.OR.205 and .210.
+See Part-IS.I.OR.205 and .210.
 
 ## Auth and privilege
 
@@ -68,7 +68,7 @@ Baseline expectations:
 - controlled break-glass access with logging and review
 - SSO readiness where enterprise customers are likely
 
-Reference: Part-IS.I.OR.200 and .240.
+See Part-IS.I.OR.200 and .240.
 
 ## Tenant isolation and data separation
 
@@ -85,7 +85,7 @@ Protect against:
 
 If the product is multi-tenant, isolation should be visible in design reviews, tests, and audit trails.
 
-Reference: Article 3 definitions and Part-IS.I.OR.205.
+See Article 3 and Part-IS.I.OR.205.
 
 ## Logging, events, and evidence
 
@@ -109,7 +109,7 @@ Also retain:
 - supplier incident communications
 - key risk and change records
 
-Reference: Part-IS.I.OR.215, .220, .245.
+See Part-IS.I.OR.215, .220 and .245.
 
 ## Detection and vulnerability management
 
@@ -147,7 +147,7 @@ For each, define:
 - evidence preservation steps
 - recovery priorities and target times
 
-Reference: Part-IS.I.OR.220 and .230.
+See Part-IS.I.OR.220 and .230.
 
 ## Suppliers and contracted activities
 
@@ -162,7 +162,7 @@ For important suppliers, know:
 - what evidence they can give you
 - what happens if they are degraded or unavailable
 
-Reference: Part-IS.I.OR.235.
+See Part-IS.I.OR.235.
 
 ## Personnel and access trust
 
@@ -176,7 +176,7 @@ Aim for:
 - explicit acknowledgement of privileged responsibilities
 - stronger trust checks for highly privileged or unsupervised access where justified
 
-Reference: Part-IS.I.OR.240.
+See Part-IS.I.OR.240.
 
 ## Change management
 
@@ -193,7 +193,7 @@ Assess security impact before major changes to:
 
 Record what changed, why, how it was reviewed, and what follow-up is required.
 
-Reference: Part-IS.I.OR.255.
+See Part-IS.I.OR.255.
 
 ## Continuous improvement
 
@@ -211,4 +211,4 @@ Track whether the system is getting better using indicators such as:
 
 Then use incidents, audits, reviews, and metrics to improve the system deliberately.
 
-Reference: Part-IS.I.OR.260.
+See Part-IS.I.OR.260.
